@@ -1,7 +1,7 @@
 export default [
   {
     title: "Project 1",
-    imgUrl: "https://via.placeholder.com/150",
+    imgUrl: /* '/assets/image.jpg */ "https://via.placeholder.com/150",
     stack: ["HTML", "CSS", "JavaScript"],
     link: "https://www.google.com",
   },
