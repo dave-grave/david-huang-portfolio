@@ -6,7 +6,7 @@ function Footer() {
       {/* code for some icons for socials */}
       <p className="text-sm mt-2 opacity-50">
         &copy; {new Date().getFullYear()}
-        David Huang. All Rights Reserved.
+        <span> David Huang. All Rights Reserved. </span>
       </p>
     </div>
   );
