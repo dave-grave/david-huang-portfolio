@@ -39,8 +39,9 @@ function Contact() {
             className="text-center inline-block
                         px-8 py-3 w-max text-base 
                         font-medium rounded-md text-white
-                        bg-gradient-to-r from-cyan-500 to-yellow-500 
-                        drop-shadow-md hover:stroke-white"
+                        bg-gradient-to-r from-cyan-400 to-yellow-400 
+                        drop-shadow-md hover:stroke-white
+                        dark:bg-gradient-to-r dark:from-pink-600 dark:to-purple-600"
           >
             Contact me!
           </button>
