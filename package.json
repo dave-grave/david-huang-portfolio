@@ -6,6 +6,9 @@
   "homepage": "https://dave-grave.github.io/david-huang-portfolio",
   "scripts": {
     "deploy": "gh-pages -d build",
+    "start": "react-scripts start",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
