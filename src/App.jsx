@@ -1,9 +1,11 @@
 import React, { useEffect, useState } from "react";
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import Intro from "./components/Intro";
 import Portfolio from "./components/Portfolio";
 import Timeline from "./components/Timeline";
+import Newsletter from "./components/Newsletter";
 
 function App() {
   const [theme, setTheme] = useState(null);
@@ -63,7 +65,7 @@ function App() {
   );
 
   return (
-    <>
+    <Router>
       <button
         type="button"
         onClick={handleThemeSwitch}
@@ -73,20 +75,40 @@ function App() {
         {theme === "dark" ? sun : moon}
       </button>
 
+      <nav className="p-4 bg-gray-200 dark:bg-gray-800">
+        <ul className="flex space-x-4">
+          <li>
+            <Link to="/">Home</Link>
+          </li>
+          <li>
+            <Link to="/newsletter">Newsletter</Link>
+          </li>
+        </ul>
+      </nav>
       <div
         className="bg-white dark:bg-stone-900 text-stone-900
         dark:text-stone-300
-      min-h-screen font-inter"
+        min-h-screen font-inter"
       >
         <div className="max-w-5xl w-11/12 mx-auto">
-          <Intro />
-          <Portfolio />
-          <Timeline />
-          <Contact />
-          <Footer />
+          <Routes>
+            <Route
+              path="/"
+              element={
+                <>
+                  <Intro />
+                  <Portfolio />
+                  <Timeline />
+                  <Contact />
+                  <Footer />
+                </>
+              }
+            />
+            <Route path="/newsletter" element={<Newsletter />} />
+          </Routes>
         </div>
       </div>
-    </>
+    </Router>
   );
 }
 

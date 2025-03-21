@@ -7,12 +7,12 @@ export default [
   },
   {
     position: "Researcher",
-    title: "Atom Bot Design Team",
+    title: "Atombots Design Team",
     duration: "Dec 2024",
     details: "research swarm intelligence in small robots",
   },
   {
-    position: "Autonomous, Powertrain subteams",
+    position: "Autonomous subteam",
     title: "MRacing Project Team",
     duration: "Aug 2024",
     details:
