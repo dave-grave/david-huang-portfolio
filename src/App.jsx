@@ -5,7 +5,7 @@ import Footer from "./components/Footer";
 import Intro from "./components/Intro";
 import Portfolio from "./components/Portfolio";
 import Timeline from "./components/Timeline";
-import Newsletter from "./components/Newsletter";
+import Blog from "./components/Blog";
 
 function App() {
   const [theme, setTheme] = useState(null);
@@ -76,10 +76,10 @@ function App() {
             Home
           </Link>
           <Link
-            to="/newsletter"
+            to="/blog"
             className="hover:underline transition-colors duration-200"
           >
-            Newsletter
+            Blog
           </Link>
         </div>
 
@@ -112,7 +112,7 @@ function App() {
                 </>
               }
             />
-            <Route path="/newsletter" element={<Newsletter />} />
+            <Route path="/blog" element={<Blog />} />
           </Routes>
         </div>
       </div>
