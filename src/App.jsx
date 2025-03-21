@@ -66,25 +66,33 @@ function App() {
 
   return (
     <Router>
-      <button
-        type="button"
-        onClick={handleThemeSwitch}
-        className="fixed p-2 z-10 right-20 top-4 bg-violet-300
-        dark:bg-orange-300 text-lg p-1 rounded-md"
-      >
-        {theme === "dark" ? sun : moon}
-      </button>
+      <div className="fixed top-4 right-4 flex items-center space-x-6">
+        {/* navigation links */}
+        <div className="flex space-x-4 text-sm font-semibold font-inter dark:text-white">
+          <Link
+            to="/"
+            className="hover:underline transition-colors duration-200"
+          >
+            Home
+          </Link>
+          <Link
+            to="/newsletter"
+            className="hover:underline transition-colors duration-200"
+          >
+            Newsletter
+          </Link>
+        </div>
 
-      <nav className="p-4 bg-gray-200 dark:bg-gray-800">
-        <ul className="flex space-x-4">
-          <li>
-            <Link to="/">Home</Link>
-          </li>
-          <li>
-            <Link to="/newsletter">Newsletter</Link>
-          </li>
-        </ul>
-      </nav>
+        {/* darkmode button */}
+        <button
+          type="button"
+          onClick={handleThemeSwitch}
+          className="p-2 z-10 bg-violet-300
+          dark:bg-orange-300 text-lg p-1 rounded-md"
+        >
+          {theme === "dark" ? sun : moon}
+        </button>
+      </div>
       <div
         className="bg-white dark:bg-stone-900 text-stone-900
         dark:text-stone-300
