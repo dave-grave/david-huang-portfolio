@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import posts from "../data/posts";
+import Footer from "./Footer";
 
 function Blog() {
   return (
@@ -24,6 +25,7 @@ function Blog() {
           </Link>
         </div>
       ))}
+      <Footer />
     </div>
   );
 }
