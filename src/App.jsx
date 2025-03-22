@@ -6,6 +6,7 @@ import Intro from "./components/Intro";
 import Portfolio from "./components/Portfolio";
 import Timeline from "./components/Timeline";
 import Blog from "./components/Blog";
+import Post from "./components/posts/Post";
 
 function App() {
   const [theme, setTheme] = useState(null);
@@ -113,6 +114,7 @@ function App() {
               }
             />
             <Route path="/blog" element={<Blog />} />
+            <Route path="/blog/:postId" element={<Post />} />
           </Routes>
         </div>
       </div>
