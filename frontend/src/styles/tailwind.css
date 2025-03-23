@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* .dark html {
+  background-color: grey;
+} */
+
+.dark body {
+  background-color: rgb(28, 25, 23);
+}
